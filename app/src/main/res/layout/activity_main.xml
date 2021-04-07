@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Controllers.MainActivity">
+
+    <ProgressBar
+        android:id="@+id/pb_processing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminateOnly="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:background="#fff">
+
+        <ProgressBar
+            android:id="@+id/activity_main_progress_bar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#E4F1FE">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="EXECUTE ACTION IN MAIN THREAD"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:tag="10"
+                app:backgroundTint="#E26A6A"
+                android:onClick="onClickButton"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="EXECUTE ACTION IN BACKGROUND"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:tag="20"
+                app:backgroundTint="#87D37C"
+                android:onClick="onClickButton"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="START ALARM"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:tag="30"
+                app:backgroundTint="#81CFE0"
+                android:onClick="onClickButton"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="STOP ALARM"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:tag="40"
+                app:backgroundTint="#52B3D9"
+                android:onClick="onClickButton"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EXECUTE JOB SCHEDULER"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:tag="50"
+            app:backgroundTint="#FABE58"
+            android:onClick="onClickButton"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EXECUTE ASYNCTASK"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:tag="60"
+            app:backgroundTint="#6C7A89"
+            android:onClick="onClickButton"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EXECUTE ASYNCTASKLOADER"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:tag="70"
+            app:backgroundTint="#36D7B7"
+            android:onClick="onClickButton"/>
+
+    </LinearLayout>
+
+</LinearLayout>
